@@ -223,7 +223,7 @@ mod tests {
 
       //Start twice
       result = sw.start();
-      assert!(result > 0.0, "ERROR: start did not provide a psoitive timestamp");
+      assert!(result > 0.0, "ERROR: start did not provide a positive timestamp");
       result = sw.start();
       assert!(result == -1.0, "ERROR: duplicate start did not fail {} != -1.0", result );
   }
